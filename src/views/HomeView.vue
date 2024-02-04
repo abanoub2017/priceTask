@@ -1,18 +1,18 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <main>
+    <AbInput/>
+    <AbCard/>
+  </main>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  }
-}
+<script setup lang="ts">
+import AbCard from '@/components/AbCard.vue';
+import AbInput from '@/components/AbInput.vue';
 </script>
+
+<style>
+main{
+  width: 30%;
+  margin: auto;
+}
+</style>
