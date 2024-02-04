@@ -2,8 +2,8 @@
   <div class="input_container">
     <label for="">Service Price</label>
     <el-input v-model="chartValue" placeholder="Please Enter value"  
-    :formatter="(value) => `$ ${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',')"
-    :parser="(value) => value.replace(/\$\s?|(,*)/g, '')"
+    :formatter="(value:  any) => `$ ${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',')"
+    :parser="(value: any) => value.replace(/\$\s?|(,*)/g, '')"
     >
     </el-input>
     <el-text class="mx-1" type="danger">{{ validation }}</el-text>
