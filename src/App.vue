@@ -2,6 +2,7 @@
 </script>
 
 <template>
+   build --base=./"
   <RouterView />
 </template>
 
